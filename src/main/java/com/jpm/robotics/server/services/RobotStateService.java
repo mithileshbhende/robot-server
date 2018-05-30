@@ -48,6 +48,27 @@ public class RobotStateService {
 			} else if(user.endsWith("2")) {
 				log.info(" User 2 Registered");
 				robotMap.put("User", "2");
+			} else if(user.endsWith("3")) {
+				log.info(" User 3 Registered");
+				robotMap.put("User", "3");
+			}else if(user.endsWith("4")) {
+				log.info(" User 4 Registered");
+				robotMap.put("User", "4");
+			} else if(user.endsWith("5")) {
+				log.info(" User 5 Registered");
+				robotMap.put("User", "5");
+			} else if(user.endsWith("6")) {
+				log.info(" User 6 Registered");
+				robotMap.put("User", "6");
+			} else if(user.endsWith("7")) {
+				log.info(" User 7 Registered");
+				robotMap.put("User", "7");
+			} else if(user.endsWith("8")) {
+				log.info(" User 8 Registered");
+				robotMap.put("User", "8");
+			} else if(user.endsWith("9")) {
+				log.info(" User 9 Registered");
+				robotMap.put("User", "9");
 			}
 		}
 		
