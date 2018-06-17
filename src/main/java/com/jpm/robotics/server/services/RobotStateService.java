@@ -85,13 +85,17 @@ public class RobotStateService {
 			log.info(" lockerOpened: Locker Opened, Received Package, Now Proceed to Desk for User " + user);
 			robotMap.put("LockerOpenedFlag", "Y");
 			robotMap.put("ProceedToDeskFlag", "Y");
+			robotMap.put("ReachedLockerFlag", "N");
 		} else if(action.equalsIgnoreCase("reachedDesk")) {
 			log.info(" reachedLocker: reachedDesk");
 			robotMap.put("ReachedDeskFlag", "Y");
 			robotMap.put("ProceedToDeskFlag", "N");
+			robotMap.put("ReachedLockerFlag", "N");
+			robotMap.put("LockerOpenedFlag", "N");
 		} else if(action.equalsIgnoreCase("packageDelivered")) {
 			log.info(" delivered: Desk Contents Delivered");
 			robotMap.put("DeliveredFlag", "Y");
+			robotMap.put("ReachedDeskFlag", "N");
 		} else if(action.equalsIgnoreCase("reachedBase")) {
 			log.info(" reachedBase: Resetting the Robot State");
 			resetState(robotMap);
